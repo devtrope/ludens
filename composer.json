@@ -1,0 +1,17 @@
+{
+    "name": "teardrops/framework",
+    "description": "A lightweight PHP framework for building web applications.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Quentin SCHIFFERLE",
+            "email": "dev.trope@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ludens\\": "src/"
+        }
+    }
+}
