@@ -35,7 +35,11 @@ class Router
 
         $parameters = self::resolveParameters($controllerInstance, $methodName, $route->parameters());
 
-        call_user_func_array($callable, $parameters);
+        $response = call_user_func_array($callable, $parameters);
+
+        if ($response instanceof Response) {
+            $response->send();
+        }
     }
 
     /**
