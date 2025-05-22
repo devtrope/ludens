@@ -39,6 +39,16 @@ class Application
     }
 
     /**
+     * Returns the base directory of the application.
+     *
+     * @return string
+     */
+    public static function getBaseDir(): string
+    {
+        return self::$baseDirectory;
+    }
+
+    /**
      * Returns the default controller of the application.
      *
      * @return string

@@ -4,6 +4,14 @@ namespace Ludens\Http;
 
 class Router
 {
+    /**
+     * Resolve the route and call the appropriate controller method.
+     *
+     * @param \Ludens\Http\Route $route
+     * @param string $httpMethod
+     * @throws \Exception
+     * @return void
+     */
     public static function resolve(Route $route, string $httpMethod): void
     {
         $controllerClass = 'App\\Http\\Controllers\\' . $route->controllerName();

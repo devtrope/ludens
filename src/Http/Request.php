@@ -4,7 +4,14 @@ namespace Ludens\Http;
 
 class Request
 {
+    /**
+     * @var string
+     */
     private string $httpMethod;
+
+    /**
+     * @var string
+     */
     private string $uri;
 
     public function __construct()
