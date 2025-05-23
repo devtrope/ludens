@@ -10,9 +10,10 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "Ludens\\": "src/"
-        }
+        "psr-4": { "Ludens\\": "src/" },
+        "files": [
+            "src/Support/helpers.php"
+        ]
     },
     "require": {
         "vlucas/phpdotenv": "^5.6",

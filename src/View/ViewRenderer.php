@@ -12,7 +12,7 @@ class ViewRenderer
      */
     private Environment $twig;
 
-    public function __contruct(string $templatesDirectory = '/templates')
+    public function __construct(string $templatesDirectory = '/templates')
     {
         $loader = new \Twig\Loader\FilesystemLoader(Application::getBaseDir() . $templatesDirectory);
         $this->twig = new Environment($loader, [
