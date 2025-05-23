@@ -20,6 +20,10 @@ class ViewRenderer
             'auto_reload' => true,
             'debug' => true,
         ]);
+
+        $this->twig->addFunction(new \Twig\TwigFunction('asset', function ($path): string {
+            return \Ludens\Support\Helpers\UrlHelper::asset($path);
+        }));
     }
 
     /**
