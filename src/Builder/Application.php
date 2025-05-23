@@ -22,7 +22,7 @@ class Application
     /**
      * Adds the environment variables to the application.
      *
-     * @param string $baseDir
+     * @param string $baseDirectory
      * @return Application
      */
     public static function setup(string $baseDirectory): Application
