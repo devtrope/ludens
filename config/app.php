@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'url' => env('APP_URL', 'http://localhost:8000'),
     'locale' => env('APP_LOCALE', 'en'),
     'name' => env('APP_NAME', 'Ludens'),
     'default_controller' => env('DEFAULT_CONTROLLER', 'home'),
