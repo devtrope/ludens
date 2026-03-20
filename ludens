@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Ludens\Core\Application;
+
+$app = Application::getInstance();
+$app->usePathsFrom(require 'config/paths.php');
+$app->loadEnvironmentFrom('.env');
+$app->loadConfiguration();
+
+use Ludens\Console\CommandRunner;
+
+$input = isset($argv[1]) ? $argv[1] : null;
+$parts = explode(':', $input);
+$command = $parts[0] ?? null;
+$argument = $parts[1] ?? null;
+
+$commandClass = 'Ludens\\Console\\Commands\\' . ucfirst($command) . ucfirst($argument) . 'Command';
+$runner = new CommandRunner($commandClass, $argv[2] ?? null);
+$runner->execute();
