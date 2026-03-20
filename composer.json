@@ -13,18 +13,10 @@
         }
     ],
     "require": {
-        "devtrope/framework": "dev-main"
+        "php": "^8.2",
+        "devtrope/framework": "^0.0.1"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../framework",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require-dev": {
         "squizlabs/php_codesniffer": "^4.0"
