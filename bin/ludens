@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Ludens\Console\CommandRunner;
+use Ludens\Core\Application;
+
+// Loads the CLI Application
+$cli = Application::getInstance();
+$cli->usePathsFrom(require 'config/paths.php');
+$cli->loadEnvironmentFrom('.env');
+$cli->loadConfiguration();
+
+$input = isset($argv[1]) ? $argv[1] : null;
+$argument = (isset($argv[2])) ? $argv[2] : null;
+
+$runner = new CommandRunner($input, $argument);
+$runner->execute();
