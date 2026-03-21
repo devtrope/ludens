@@ -9,8 +9,5 @@ use Ludens\Core\CliApplication;
 $cli = new CliApplication();
 $cli->boot(__DIR__ . '/..');
 
-$input = isset($argv[1]) ? $argv[1] : null;
-$argument = (isset($argv[2])) ? $argv[2] : null;
-
-$runner = new CommandRunner($input, $argument);
+$runner = new CommandRunner($argv);
 $runner->execute();
