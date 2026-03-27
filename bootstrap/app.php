@@ -6,4 +6,5 @@ $app = Application::getInstance();
 $app->usePathsFrom(require __DIR__ . '/../config/paths.php');
 $app->loadEnvironmentFrom(__DIR__ . '/../.env');
 $app->loadConfiguration();
+$app->configureExceptionHandling();
 return $app;
