@@ -2,10 +2,12 @@
 
 namespace App\Http\Controller;
 
+use Ludens\Http\Response;
+
 class HomeController extends BaseController
 {
-    public function index(): void
+    public function index(): Response
     {
-        $this->render('home/index.html.twig');
+        return $this->view('home/index.html.twig');
     }
 }
