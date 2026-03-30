@@ -38,5 +38,27 @@ return [
      |-------------------------------------------------------------
      */
     'redirect_after_logout' => '/',
+
+    /*
+     |-------------------------------------------------------------
+     | Route to login
+     |-------------------------------------------------------------
+     */
+    'login_route' => '/login',
+
+    /*
+     |-------------------------------------------------------------
+     | Route security configuration
+     |
+     | Define which routes require authentication:
+     |
+     |  - auth => true  : accessible only if the user is authenticated
+     |  - auth => false : accessible only if the user is NOT authenticated
+     |
+     |-------------------------------------------------------------
+     */
+    'security' => [
+        '/login' => ['auth' => false], 
+    ],
     
 ];
