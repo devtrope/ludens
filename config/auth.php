@@ -37,7 +37,7 @@ return [
      | Route to redirect when user is logged out
      |-------------------------------------------------------------
      */
-    'redirect_after_logout' => '/logout',
+    'redirect_after_logout' => '/',
 
     /*
      |-------------------------------------------------------------
