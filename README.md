@@ -1,4 +1,6 @@
-# Ludens
+<p align="center" dir="auto">
+    <img src="https://raw.githubusercontent.com/devtrope/ludens/refs/heads/main/public/assets/images/logo.png" width="200">
+</p>
 
 Ludens is a lightweight PHP framework built for developers who want simplicity without sacrificing structure.
 
