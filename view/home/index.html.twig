@@ -1,10 +1,63 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <div class="max-w-3xl w-full text-center space-y-8">
-        <h1 class="text-5xl font-semibold tracking-tight text-slate-800">Welcome to <span class="text-emerald-500">Ludens</span></h1>
-        <p class="text-lg">
-            Your application is ready to go! Ludens is a lightweight PHP framework designed for simplicity and performance.
+    <main class="flex-1 flex flex-col items-center justify-center px-6 py-20">
+
+        <div class="text-center mb-16">
+            <img src="/assets/images/logo.png" alt="Ludens" class="h-16 mx-auto mb-10" />
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-slate-900/40 mb-8">
+                v{{ ludens_version }}
+            </div>
+            <h1 class="text-4xl font-medium text-slate-900 mb-4">
+                Welcome to <span style="color: #7c6af7;">Ludens</span>
+            </h1>
+            <p class="text-slate-900/70 text-base max-w-md mx-auto leading-relaxed">
+                Your application is ready. A lightweight PHP framework built for developers who value simplicity and clean architecture.
+            </p>
+        </div>
+
+        <div class="w-full max-w-lg mb-16">
+            <div class="flex items-center justify-center gap-3 px-4 py-3 rounded-xl border border-violet-900/10 bg-violet-900/5">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="shrink-0" style="color: #7c6af7;"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <code class="font-mono text-sm text-slate-900/60">{{ config('paths.root') }}</code>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-lg">
+            <a href="https://github.com/devtrope/framework" target="_blank"
+                class="group flex flex-col items-center gap-3 px-5 py-6 rounded-xl border border-violet-900/10 bg-violet-900/5 hover:border-violet-900/20 hover:bg-violet-900/8 transition-all text-center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-slate-900/30 group-hover:text-slate-900/50 transition-colors"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                    <p class="text-sm font-medium text-slate-900/70 group-hover:text-slate-900 transition-colors">GitHub</p>
+                    <p class="text-xs text-slate-900/30 mt-0.5">Source code</p>
+                </div>
+            </a>
+
+            <a href="https://packagist.org/packages/devtrope/framework" target="_blank"
+                class="group flex flex-col items-center gap-3 px-5 py-6 rounded-xl border border-violet-900/10 bg-violet-900/5 hover:border-violet-900/20 transition-all text-center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-slate-900/30 group-hover:text-slate-900/50 transition-colors"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                    <p class="text-sm font-medium text-slate-900/70 group-hover:text-slate-900 transition-colors">Packagist</p>
+                    <p class="text-xs text-slate-900/30 mt-0.5">devtrope/framework</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/devtrope/framework/blob/main/README.md" target="_blank"
+                class="group flex flex-col items-center gap-3 px-5 py-6 rounded-xl border border-violet-900/10 bg-violet-900/5 hover:border-violet-900/20 transition-all text-center">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-slate-900/30 group-hover:text-slate-900/50 transition-colors"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <div>
+                    <p class="text-sm font-medium text-slate-900/70 group-hover:text-slate-900 transition-colors">README</p>
+                    <p class="text-xs text-slate-900/30 mt-0.5">Getting started</p>
+                </div>
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="text-center pb-8">
+        <p class="font-mono text-xs text-slate-900/70">
+            PHP {{ php_version }} &nbsp;·&nbsp; Ludens v{{ ludens_version }}
         </p>
-    </div>
+    </footer>
 {% endblock %}
+
