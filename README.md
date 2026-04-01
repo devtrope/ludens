@@ -23,6 +23,6 @@ cp .env.example .env
 
 ## License
 
-Ludens is open-source software licensed under the [MIT license](LICENSE).
+Ludens is open-source software licensed under the [MIT license](LICENSE.md).
 
 (c) 2026 Quentin Schifferle <dev.trope@gmail.com>
