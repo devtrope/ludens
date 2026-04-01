@@ -6,7 +6,7 @@
         <div class="text-center mb-16">
             <img src="/assets/images/logo.png" alt="Ludens" class="h-16 mx-auto mb-10" />
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-slate-900/40 mb-8">
-                v{{ ludens_version }}
+                {{ ludens_version }}
             </div>
             <h1 class="text-4xl font-medium text-slate-900 mb-4">
                 Welcome to <span style="color: #7c6af7;">Ludens</span>
@@ -56,7 +56,7 @@
 
     <footer class="text-center pb-8">
         <p class="font-mono text-xs text-slate-900/70">
-            PHP {{ php_version }} &nbsp;·&nbsp; Ludens v{{ ludens_version }}
+            PHP {{ php_version }} &nbsp;·&nbsp; Ludens {{ ludens_version }}
         </p>
     </footer>
 {% endblock %}

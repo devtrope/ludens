@@ -11,7 +11,7 @@ class HomeController extends BaseController
     {
         return $this->view('home/index.html.twig', [
             'php_version' => PHP_VERSION,
-            'ludens_version' => InstalledVersions::getVersion('devtrope/framework')
+            'ludens_version' => InstalledVersions::getPrettyVersion('devtrope/framework')
         ]);
     }
 }
