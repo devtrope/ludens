@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Repository;
+namespace App\Repository;
 
-use App\Http\Model\User;
+use App\Model\User;
 use Ludens\Framework\AbstractRepository;
 
 class UserRepository extends AbstractRepository

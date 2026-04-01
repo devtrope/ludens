@@ -7,20 +7,20 @@ return [
      | Namespace for repository classes
      |-------------------------------------------------------------
      */
-    'repository' => '\\App\\Http\\Repository\\',
+    'repository' => '\\App\\Repository\\',
 
     /*
      |-------------------------------------------------------------
      | Namespace for controller classes
      |-------------------------------------------------------------
      */
-    'controller' => '\\App\\Http\\Controller\\',
+    'controller' => '\\App\\Controller\\',
 
     /*
      |-------------------------------------------------------------
      | Namespace for model classes
      |-------------------------------------------------------------
      */
-    'model' => '\\App\\Http\\Model\\',
+    'model' => '\\App\\Model\\',
 
 ];

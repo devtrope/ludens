@@ -28,21 +28,21 @@ return [
      | Controllers directory
      |-------------------------------------------------------------
      */
-    'controller' => dirname(__DIR__) . '/src/Http/Controller',
+    'controller' => dirname(__DIR__) . '/src/Controller',
 
     /*
      |-------------------------------------------------------------
      | Models directory
      |-------------------------------------------------------------
      */
-    'model' => dirname(__DIR__) . '/src/Http/Model',
+    'model' => dirname(__DIR__) . '/src/Model',
 
     /*
      |-------------------------------------------------------------
      | Repositories directory
      |-------------------------------------------------------------
      */
-    'repository' => dirname(__DIR__) . '/src/Http/Repository',
+    'repository' => dirname(__DIR__) . '/src/Repository',
     
     /*
      |-------------------------------------------------------------
