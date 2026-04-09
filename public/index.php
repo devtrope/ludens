@@ -7,4 +7,4 @@ if (PHP_SESSION_NONE === session_status()) {
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $app = require_once __DIR__ . '/../bootstrap/app.php';
-$app->init(new \Ludens\Http\Request());
+$app->init(\Ludens\Http\Request::capture());
